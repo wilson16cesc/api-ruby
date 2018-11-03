@@ -1,0 +1,36 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  database: apirest
+  pool: 5
+  port: 5433
+  username: wilson
+  password: 123
+  timeout: 5000
+
+development:
+  <<: *default
+  database: apirest
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: apirest
+
+production:
+  <<: *default
+  database: dcrkoodiha93k0
+  host: ec2-54-243-46-32.compute-1.amazonaws.com
+  user: qcrhhwaxtotooa
+  port: 5432
+  password: 62331b8f8f962c306750884ddc0ea0995a83b7b17d1a965e6bf1cf1476163402
+  URI: postgres://qcrhhwaxtotooa:62331b8f8f962c306750884ddc0ea0995a83b7b17d1a965e6bf1cf1476163402@ec2-54-243-46-32.compute-1.amazonaws.com:5432/dcrkoodiha93k0
+  Heroku CLI: heroku pg:psql postgresql-lively-23090 --app myapistack
