@@ -44,6 +44,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (8.0.0)
+    bcrypt (3.1.12)
     bcrypt (3.1.12-x86-mingw32)
     builder (3.2.3)
     byebug (10.0.2)
@@ -74,10 +75,13 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     nio4r (2.3.1)
+    nokogiri (1.8.5)
+      mini_portile2 (~> 2.3.0)
     nokogiri (1.8.5-x86-mingw32)
       mini_portile2 (~> 2.3.0)
+    pg (1.1.3)
     pg (1.1.3-x86-mingw32)
-    puma (3.12.0)
+    puma (3.12.4)
     rack (2.0.5)
     rack-cors (1.0.2)
     rack-test (1.1.0)
@@ -124,6 +128,7 @@ GEM
     websocket-extensions (0.1.3)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
@@ -133,7 +138,7 @@ DEPENDENCIES
   faker
   knock
   pg
-  puma (~> 3.7)
+  puma (~> 3.12)
   rack-cors
   rails (~> 5.1.6)
   tzinfo-data
