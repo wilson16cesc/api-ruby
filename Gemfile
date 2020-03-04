@@ -15,7 +15,7 @@ gem 'faker'
 # Esta gema nos permite habilita "has_secure_password" en Active Record
 gem 'bcrypt', '~> 3.1.7'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.12'
 # Usamos knock para autenticar con el JWT
 gem 'knock'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
